@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a64da7ca.css",
-    "main.js": "/static/js/main.c638420f.js",
+    "main.js": "/static/js/main.2336f08d.js",
     "static/js/787.a2dc0b67.chunk.js": "/static/js/787.a2dc0b67.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.97f2b188b8af96fb1758.gif",
     "static/media/Saurabh-Bhatt-Resume.pdf": "/static/media/Saurabh-Bhatt-Resume.6bbdc2d9e16b016c25b0.pdf",
@@ -9,6 +9,9 @@
     "static/media/react.png": "/static/media/react.7a64cc78ecf2029fcd9d.png",
     "static/media/redux.png": "/static/media/redux.9b07d6f1e436629fbc1a.png",
     "static/media/chakra.png": "/static/media/chakra.c94d11bd16c1cc50a204.png",
+    "static/media/express.png": "/static/media/express.cdb70b9919d9cfa9c78f.png",
+    "static/media/typescript.png": "/static/media/typescript.2f87f5d535b5d81fb886.png",
+    "static/media/mdb.png": "/static/media/mdb.c26050ed1f2d157f3778.png",
     "static/media/mobile.png": "/static/media/mobile.8a09219b0a3a19772038.png",
     "static/media/linkedin.png": "/static/media/linkedin.3a6269f17c06e6373d4e.png",
     "static/media/github.png": "/static/media/github.04c45f897fe10cfe9e8b.png",
@@ -19,11 +22,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.a64da7ca.css.map": "/static/css/main.a64da7ca.css.map",
-    "main.c638420f.js.map": "/static/js/main.c638420f.js.map",
+    "main.2336f08d.js.map": "/static/js/main.2336f08d.js.map",
     "787.a2dc0b67.chunk.js.map": "/static/js/787.a2dc0b67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a64da7ca.css",
-    "static/js/main.c638420f.js"
+    "static/js/main.2336f08d.js"
   ]
 }
