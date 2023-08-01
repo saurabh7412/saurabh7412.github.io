@@ -7,6 +7,8 @@ import { CheckCircleIcon as MdCheckCircle } from "@chakra-ui/icons";
 
 const AboutSection = () => {
   return (
+    <div  id="about" class="about section">
+
     <DIV>
       <h1>
         <span id="about1">About</span> <span id="about2">Me</span>
@@ -17,7 +19,7 @@ const AboutSection = () => {
           <img src={gif2} />
         </div>
 
-        <div id="about3-2">
+        <div className="about3-2" id="user-detail-intro">
           <List spacing={10}>
             <ListItem className="listitem" >
               <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
@@ -41,13 +43,14 @@ const AboutSection = () => {
               I built 4 major projects and 6+ mini projects. Learned a great
               deal about teamwork, leadership, and communication. After months
               of rigorous training, here I am looking for an opportunity as a
-              full Stack web Developer.
+              full Stack web Developer.HTML, CSS, JavaScript
             </ListItem>
           </List>
-         
         </div>
+
       </div>
     </DIV>
+    </div>
   );
 };
 
@@ -75,7 +78,7 @@ const DIV = styled.div`
   #about3-1 img {
     width: 100%;
   }
-  #about3-2 {
+  .about3-2 {
     width: 50%;
     margin-top: 40px;
     font-size: 22px;
@@ -84,6 +87,41 @@ const DIV = styled.div`
   }
   .listitem {
     margin-bottom: 20px;
+  }
+
+
+
+
+
+  @media only screen and (max-width: 768px) and (min-width: 500px) {
+    #about3 {
+      flex-direction: column;
+      align-items: center;
+    }
+    #about3-1 img {
+      width: 70%;
+    }
+    .about3-2 {
+      width: 80%;
+    }
+  }
+
+  /* Add styles for small screens */
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 24px;
+    }
+    #about3 {
+      flex-direction: column;
+      align-items: center;
+    }
+    #about3-1 img {
+      width: 90%;
+    }
+    .about3-2 {
+      width: 90%;
+      font-size: 18px;
+    }
   }
 `;
 // style={{color:'#04aa6d'}}

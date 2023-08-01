@@ -5,37 +5,65 @@ import js from "../images/js.png";
 import react from "../images/react.png";
 import chakra from "../images/chakra.png";
 import redux from "../images/redux.png";
+import mdb from "../images/mdb.png";
+import exp from "../images/express.png";
+import mongoose from "../images/mongoose.png";
+import expjs from "../images/express-js.png";
+import ts from "../images/typescript.png";
 
 export const skillArr = [
     {
         id:1,
-        image : html,
-        title : 'HTML',
-    },
-    {
+        image : react,
+        title : 'React',
+    },{
         id:2,
-        image : css,
-        title : 'CSS',
-    },
-    {
+        image : redux,
+        title : 'Redux',
+    },{
         id:3,
-        image : js,
-        title : 'JavaScript',
+        image : mdb,
+        title : 'MongoDB',
     },
     {
         id:4,
-        image : react,
-        title : 'React',
+        image : exp,
+        title : 'Node Js',
     },
     {
         id:5,
+        image : mongoose,
+        title : 'Mongoose',
+    },
+    {
+        id:6,
+        image : expjs,
+        title : 'Express Js',
+    },
+    {
+        id:7,
+        image : ts,
+        title : 'TypeScript',
+    },
+    {
+        id:8,
         image : chakra,
         title : 'Chakra UI',
     },
     {
-        id:6,
-        image : redux,
-        title : 'Redux',
+        id:9,
+        image : html,
+        title : 'HTML',
+    },
+    {
+        id:10,
+        image : css,
+        title : 'CSS',
+    },
+    {
+        id:11,
+        image : js,
+        title : 'JavaScript',
     },
     
 ]

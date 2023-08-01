@@ -3,7 +3,9 @@ import { styled } from "styled-components";
 
 const SkillCard = ({ id, image, title }) => {
   return (
-    <DIV class="skills-card">
+
+    <div class="skills-card">
+    <DIV >
     <div id="x">
       <img src={image} class="skills-card-img" />
       <h2 class="skills-card-name">
@@ -11,6 +13,7 @@ const SkillCard = ({ id, image, title }) => {
       </h2>
       </div>
     </DIV>
+    </div>
   );
 };
 

@@ -8,6 +8,7 @@ const ProjectSection = () => {
   // console.log(proArr);
 
   return (
+    <div id="projects">
     <DIV>
       <h1>
         <span id="pro1">My</span> <span id="pro2">Projects</span>
@@ -20,6 +21,7 @@ const ProjectSection = () => {
         }
       </div>
     </DIV>
+    </div>
   );
 };
 
@@ -47,6 +49,29 @@ h1 {
   grid-template-columns : repeat(2,1fr);
   gap: 20px;
 }
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .proArr {
+  display : grid;
+  width: 85%;
+  margin : auto;
+  grid-template-columns : repeat(2,1fr);
+  gap: 20px;
+}
+  }
+
+  /* Add styles for small screens */
+  @media only screen and (max-width: 500px) {
+    .proArr {
+  display : grid;
+  width: 85%;
+  margin : auto;
+  grid-template-columns : repeat(1,1fr);
+  gap: 20px;
+}
+  }
 
 
 

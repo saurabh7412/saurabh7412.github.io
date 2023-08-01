@@ -7,18 +7,20 @@ const SkillSection = () => {
   // console.log(skillArr);
 
   return (
+    <div id="skills">
     <DIV className='div1'>
       <h1><span id='sp1'>My </span><span id='sp2'>Technical </span><span id='sp1'>Skills</span>
       </h1>
 
       <div className='div2'>
         {
-          skillArr.map((el)=>(
+          skillArr?.map((el)=>(
             <SkillCard key={el.id} {...el}/>
           ))
         }
       </div>
     </DIV>
+    </div>
   )
 }
 
@@ -48,6 +50,25 @@ background-color: rgb(15, 22, 36);
   display : grid ;
   grid-template-columns : repeat(5,1fr);
   gap : 25px;
+}
+
+
+
+/* Add styles for medium screens */
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .div2 {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Add styles for small screens */
+@media only screen and (max-width: 500px) {
+  .div2 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
 }
 
 `;

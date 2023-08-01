@@ -17,13 +17,13 @@ function App() {
   return (
     <div className="App">
      {/* <h1>Jai Shree Ram !!</h1> */}
-     <Navbar id="nav-menu"/>
-     <HomeSection id="home"/>
-     <AboutSection id="about" class="about section"/>
-     <ProjectSection  id="projects"/>
+     <Navbar />
+     <HomeSection />
+     <AboutSection/>
+     <ProjectSection  />
      <GithubSection/>
-     <SkillSection id="skills"/>
-     <ContactSection  id="contact"/>
+     <SkillSection />
+     <ContactSection />
 
      {/* <AllRoutes/> */}
     </div>

@@ -17,7 +17,8 @@ const ProjectCard = ({
   tech_stack,
   deploy_link,
   github_link,
-  presentation_link
+  presentation_link,
+  myrole
 }) => {
 
     // const navigate = useNavigate();
@@ -26,20 +27,23 @@ const ProjectCard = ({
     //     navigate(github_link);
     // }
   return (
-    <DIV class="project-card">
+    <div className="project-card">
+
+    <DIV >
       <img className="img1" src={image} alt="product" />
-      <h2>
-        <span class="project-title" className="greencolor">{title}</span>
+      <h2 className="project-title" >
+        <span className="greencolor">{title}</span>
       </h2>
+        {myrole && <h3><span className="greencolor">My Role :</span> {myrole}</h3>}
       <p>
-        <span class="project-description">{desc}</span>
+        <span className="project-description">{desc}</span>
       </p>
       <p>
         <span className="greencolor">Type of Project</span> :{" "}
         <span>{project_type}</span> | <span className="greencolor">Duration </span>: <span>{duration} days</span>
       </p>
-      <h4>
-        <span class="project-tech-stack" className="greencolor">TECH STACK</span> : <span>{tech_stack}</span>
+      <h4 className="project-tech-stack">
+        <span  className="greencolor">TECH STACK</span> : <span>{tech_stack}</span>
       </h4>
       <div className="imgdiv">
         <a  href={github_link} class="project-github-link"  target="_blank"><img title="Github" className="img2"  src={github} alt="github" /></a>
@@ -57,6 +61,7 @@ const ProjectCard = ({
         /></a>
       </div>
     </DIV>
+    </div>
   );
 };
 
