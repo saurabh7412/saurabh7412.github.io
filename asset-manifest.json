@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a64da7ca.css",
-    "main.js": "/static/js/main.2336f08d.js",
+    "main.js": "/static/js/main.fe5d7d11.js",
     "static/js/787.a2dc0b67.chunk.js": "/static/js/787.a2dc0b67.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.97f2b188b8af96fb1758.gif",
     "static/media/Saurabh-Bhatt-Resume.pdf": "/static/media/Saurabh-Bhatt-Resume.6bbdc2d9e16b016c25b0.pdf",
+    "static/media/emailme.svg": "/static/media/emailme.90e8c0993f0554b8623463cdf471d267.svg",
     "static/media/profile2.jpg": "/static/media/profile2.7551885bb7417c4d3cd4.jpg",
     "static/media/react.png": "/static/media/react.7a64cc78ecf2029fcd9d.png",
     "static/media/redux.png": "/static/media/redux.9b07d6f1e436629fbc1a.png",
@@ -22,11 +23,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.a64da7ca.css.map": "/static/css/main.a64da7ca.css.map",
-    "main.2336f08d.js.map": "/static/js/main.2336f08d.js.map",
+    "main.fe5d7d11.js.map": "/static/js/main.fe5d7d11.js.map",
     "787.a2dc0b67.chunk.js.map": "/static/js/787.a2dc0b67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a64da7ca.css",
-    "static/js/main.2336f08d.js"
+    "static/js/main.fe5d7d11.js"
   ]
 }
