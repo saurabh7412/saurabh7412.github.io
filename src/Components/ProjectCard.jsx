@@ -47,12 +47,16 @@ const ProjectCard = ({
       </h4>
       <div className="imgdiv">
         <a  href={github_link} class="project-github-link"  target="_blank"><img title="Github" className="img2"  src={github} alt="github" /></a>
+
+        {video.length > 0 && 
         <a href={presentation_link} target="_blank"><img
           title="Presentation Video"
           className="img2"
           src={video}
           alt="presentation"
         /></a>
+        }
+        
         <a href={deploy_link} class="project-deployed-link" target="_blank"><img
           title="Netlify Link"
           className="img2"

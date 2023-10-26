@@ -1,7 +1,7 @@
 import { color } from "framer-motion";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../images/profile2.jpg";
+import profile from "../images/profilepic.png";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import email from "../images/email.png";
@@ -15,7 +15,7 @@ import resume from "../images/Saurabh-Bhatt-Resume.pdf";
 const HomeSection = () => {
   const handleClick = () => {
     window.open(
-      `https://drive.google.com/file/d/19RW0qYZv-9deVv_dgljMndNBcLL6z6BD/view`,
+      `https://drive.google.com/file/d/19RW0qYZv-9deVv_dgljMndNBcLL6z6BD/view?usp=sharing`,
       "_blank",
       "noopener",
       "noreferer"
@@ -131,7 +131,6 @@ const DIV = styled.div`
     margin-left: 70px;
   }
   .link-2 button {
-    background-color: #04aa6d;
 
     font-size: 20px;
     padding: 10px;
@@ -242,6 +241,7 @@ const DIV = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    
   }
 
   .box {
@@ -249,6 +249,7 @@ const DIV = styled.div`
     height: 60vmin;
     /*   border: 1px dashed rgba(255,255,255,0.4); */
     position: relative;
+    
 
     &::before {
       content: "";
@@ -268,6 +269,7 @@ const DIV = styled.div`
     height: 100%;
     animation: spin 12s ease-in-out infinite alternate;
     position: relative;
+    
   }
 
   .shape {
@@ -281,6 +283,8 @@ const DIV = styled.div`
     position: absolute;
     overflow: hidden;
     z-index: 5;
+    ${'' /* box-shadow: rgba(150, 150, 150, 0.45) 0px 5px 10px; */}
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   .bd {
@@ -289,7 +293,8 @@ const DIV = styled.div`
     position: absolute;
     left: -21%;
     top: -21%;
-    background: url(http://getwallpapers.com/wallpaper/full/d/b/f/352615.jpg);
+    ${'' /* background: url(http://getwallpapers.com/wallpaper/full/d/b/f/352615.jpg); */}
+    background-color : white;
     background-size: 100%;
     background-position: center center;
     display: flex;
@@ -303,6 +308,12 @@ const DIV = styled.div`
     animation: spin 12s ease-in-out infinite alternate-reverse;
     opacity: 1;
     z-index: 2;
+    
+    box-shadow: rgba(150, 150, 150, 0.45) 0px 5px 10px;
+  }
+
+  .bd img{
+    width : 75%;
   }
 
   @keyframes morph {

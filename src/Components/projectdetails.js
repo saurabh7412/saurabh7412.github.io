@@ -2,6 +2,19 @@ export const projectArr = [
   {
       
     id : 1,
+    image : "https://user-images.githubusercontent.com/121215502/276920272-96e17545-0028-4880-8d32-300ea11893ab.png",
+    title : "Advanced-Code-Converter",
+    desc : `Experience seamless code conversion and GitHub integration with my advanced tool, leveraging OpenAI. Easily convert and push code to your GitHub repository, streamlining your development process and enhancing collaboration. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion process. We are proud to share that this project was successfully completed in just 2 days by a solo developer. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding. Elevate your coding experience with us!`,
+    project_type : "Solo Project",
+    duration : 2,
+    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node | Express",
+    github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
+    deploy_link : "https://advanced-code-converter.vercel.app/"
+
+  },
+  {
+      
+    id : 2,
     image : "https://user-images.githubusercontent.com/121215502/255427784-4d57f2a9-dc62-4d44-b30f-5895e3f68f24.png",
     title : "BRIKS99.COM",
     myrole : "Team Lead of the project and implemented BACKEND using MongoDB Atlas",
@@ -17,7 +30,7 @@ export const projectArr = [
 
   },
   {
-    id : 2,
+    id : 3,
     image : "https://user-images.githubusercontent.com/121215502/246683711-2d630738-872d-4d61-a5a4-7f37ee31c839.png",
     title : "ATTIRE-GURU",
     myrole : "Team Lead of the project and designed Admin Side for the website",
@@ -33,7 +46,7 @@ export const projectArr = [
   },
 
     {
-      id : 3,
+      id : 4,
       image : "https://user-images.githubusercontent.com/121215502/238124953-e61a3095-4343-4dc4-903b-c1e9b0c74945.png",
       title : "TRONICO.COM",
       desc : `This is an E-Commerce website which speciaizes in selling electronic products for all category. The website provides 33,000 products of different types of products like mobiles, laptops, cameras, etc.
@@ -48,7 +61,7 @@ export const projectArr = [
     },
 
     {
-        id : 4,
+        id : 5,
       image : "https://user-images.githubusercontent.com/115460422/229435830-fe8f6d2d-bbfc-456c-b9eb-611e6af6ab4f.png",
       title : "DEN DECOR",
       myrole : "Implemented All Product Page, Single Product Page & Cart Page",
@@ -63,7 +76,7 @@ export const projectArr = [
       deploy_link : `https://gleaming-tartufo-a756fb.netlify.app/allproduct#`,
     },
     {
-        id : 5,
+        id : 6,
       image : "https://user-images.githubusercontent.com/121215502/241918994-518e6152-c657-4c90-8f50-5a2d01f21276.png",
       title : "RENT-IT",
       desc : `This is an E-Commerce website which speciaizes in selling household products for all categories. The website provides 23,000 products of different types of products like furnitures, packages, appliances, fitness and WFH essentials, etc.

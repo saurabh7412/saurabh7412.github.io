@@ -116,6 +116,7 @@ const WRAPPER = styled.div`
   background-color: #212121;
   color: white;
   position: fixed;
+  z-index : 1;
   top: 0px;
   text {
     font-size: 23px;
