@@ -7,7 +7,7 @@ export const projectArr = [
     desc : `Experience seamless code conversion and GitHub integration with my advanced tool, leveraging OpenAI. Easily convert and push code to your GitHub repository, streamlining your development process and enhancing collaboration. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion process. We are proud to share that this project was successfully completed in just 2 days by a solo developer. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding. Elevate your coding experience with us!`,
     project_type : "Solo Project",
     duration : 2,
-    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node | Express",
+    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node.js | Express.js",
     github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
     deploy_link : "https://advanced-code-converter.vercel.app/"
 
