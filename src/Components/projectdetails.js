@@ -26,7 +26,7 @@ export const projectArr = [
     tech_stack : "Full-Stack (MERN)",
     github_link : `https://github.com/saurabh7412/enormous-library-3081/tree/main`,
     presentation_link : `https://drive.google.com/file/d/1Ec6MkIX1RYdNQfaK_MaEXxZImrEboeMO/view`,
-    deploy_link : "https://stalwart-fairy-7587d7.netlify.app/"
+    deploy_link : "https://briks99.netlify.app/"
 
   },
   {
