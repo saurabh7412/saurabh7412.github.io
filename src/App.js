@@ -9,6 +9,7 @@ import ProjectSection from './Components/ProjectSection';
 import ContactSection from './Components/ContactSection';
 import { useEffect } from 'react';
 import GithubSection from './Components/GithubSection';
+import Miniprojects from './Components/Miniprojects';
 
 
 
@@ -21,6 +22,7 @@ function App() {
      <HomeSection />
      <AboutSection/>
      <ProjectSection  />
+     <Miniprojects/>
      <GithubSection/>
      <SkillSection />
      <ContactSection />
