@@ -1,33 +1,39 @@
 {
   "files": {
     "main.css": "/static/css/main.a64da7ca.css",
-    "main.js": "/static/js/main.11f54d4a.js",
+    "main.js": "/static/js/main.57961d7c.js",
     "static/js/787.a2dc0b67.chunk.js": "/static/js/787.a2dc0b67.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.97f2b188b8af96fb1758.gif",
     "static/media/profilepic.png": "/static/media/profilepic.749bf122b71354f6ca8b.png",
     "static/media/Saurabh-Bhatt-Resume.pdf": "/static/media/Saurabh-Bhatt-Resume.82844b496d3fed756d47.pdf",
     "static/media/emailme.svg": "/static/media/emailme.90e8c0993f0554b8623463cdf471d267.svg",
+    "static/media/vscode.png": "/static/media/vscode.e82247f90a108f3fc1dd.png",
+    "static/media/flask.png": "/static/media/flask.285aac6264c3e04a43d6.png",
     "static/media/react.png": "/static/media/react.7a64cc78ecf2029fcd9d.png",
     "static/media/redux.png": "/static/media/redux.9b07d6f1e436629fbc1a.png",
     "static/media/chakra.png": "/static/media/chakra.c94d11bd16c1cc50a204.png",
+    "static/media/openai.png": "/static/media/openai.e68bab439b993c867536.png",
     "static/media/express.png": "/static/media/express.cdb70b9919d9cfa9c78f.png",
     "static/media/typescript.png": "/static/media/typescript.2f87f5d535b5d81fb886.png",
+    "static/media/python.png": "/static/media/python.a16a354d2cc7afe4bd79.png",
     "static/media/mdb.png": "/static/media/mdb.c26050ed1f2d157f3778.png",
     "static/media/mobile.png": "/static/media/mobile.8a09219b0a3a19772038.png",
     "static/media/linkedin.png": "/static/media/linkedin.3a6269f17c06e6373d4e.png",
+    "static/media/angular.png": "/static/media/angular.fcd75e71e18b685d0ec1.png",
     "static/media/github.png": "/static/media/github.04c45f897fe10cfe9e8b.png",
     "static/media/css.png": "/static/media/css.f5d2bead1c4e6f201cfb.png",
     "static/media/check.png": "/static/media/check.1b3cf39636f84062b683.png",
     "static/media/html.png": "/static/media/html.1543961859ab73b04424.png",
     "static/media/js.png": "/static/media/js.5938340670360d015c3a.png",
+    "static/media/tailwind.png": "/static/media/tailwind.93c2169708ddceac1833.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.a64da7ca.css.map": "/static/css/main.a64da7ca.css.map",
-    "main.11f54d4a.js.map": "/static/js/main.11f54d4a.js.map",
+    "main.57961d7c.js.map": "/static/js/main.57961d7c.js.map",
     "787.a2dc0b67.chunk.js.map": "/static/js/787.a2dc0b67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a64da7ca.css",
-    "static/js/main.11f54d4a.js"
+    "static/js/main.57961d7c.js"
   ]
 }
