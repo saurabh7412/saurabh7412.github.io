@@ -108,7 +108,7 @@ export default ProjectSection;
 const DIV = styled.div`
   background-color: rgb(15, 22, 36);
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   h1 {
     margin-top: 40px;
   }
@@ -122,21 +122,17 @@ const DIV = styled.div`
 
   .proArr {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width:90%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+    width:80%;
     margin:auto;
     align-content: start;
-  }
-
-  .project-card {
-    height: 900px; /* Set a fixed height for each card */
   }
 
   @media only screen and (max-width: 768px) and (min-width: 500px) {
     .proArr {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
   }

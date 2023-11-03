@@ -2,19 +2,6 @@ export const projectArr = [
   {
       
     id : 1,
-    image : "https://user-images.githubusercontent.com/121215502/276920272-96e17545-0028-4880-8d32-300ea11893ab.png",
-    title : "Advanced-Code-Converter",
-    desc : `Experience seamless code conversion and GitHub integration with my advanced tool, leveraging OpenAI. Easily convert and push code to your GitHub repository, streamlining your development process and enhancing collaboration. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion process. We are proud to share that this project was successfully completed in just 2 days by a solo developer. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding. Elevate your coding experience with us!`,
-    project_type : "Solo Project",
-    duration : 2,
-    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node | Express",
-    github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
-    deploy_link : "https://advanced-code-converter.vercel.app/"
-
-  },
-  {
-      
-    id : 2,
     image : "https://user-images.githubusercontent.com/121215502/255427784-4d57f2a9-dc62-4d44-b30f-5895e3f68f24.png",
     title : "BRIKS99.COM",
     myrole : "Team Lead of the project and implemented BACKEND using MongoDB Atlas",
@@ -27,6 +14,19 @@ export const projectArr = [
     github_link : `https://github.com/saurabh7412/enormous-library-3081/tree/main`,
     presentation_link : `https://drive.google.com/file/d/1Ec6MkIX1RYdNQfaK_MaEXxZImrEboeMO/view`,
     deploy_link : "https://briks99.netlify.app/"
+
+  },
+  {
+      
+    id : 2,
+    image : "https://user-images.githubusercontent.com/121215502/276920272-96e17545-0028-4880-8d32-300ea11893ab.png",
+    title : "Advanced-Code-Converter",
+    desc : `Experience seamless code conversion and GitHub integration with my advanced tool, leveraging OpenAI. Easily convert and push code to your GitHub repository, streamlining your development process and enhancing collaboration. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion process. We are proud to share that this project was successfully completed in just 2 days by a solo developer. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding. Elevate your coding experience with us!`,
+    project_type : "Solo Project",
+    duration : 2,
+    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node | Express",
+    github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
+    deploy_link : "https://advanced-code-converter.vercel.app/"
 
   },
   {
