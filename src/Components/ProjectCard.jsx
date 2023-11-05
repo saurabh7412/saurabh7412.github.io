@@ -121,7 +121,7 @@ const ProjectCard = ({
                 />
               </a>
 
-              {video.length > 0 && (
+              {presentation_link && (
                 <a href={presentation_link} target="_blank">
                   <img
                     title="Presentation Video"
