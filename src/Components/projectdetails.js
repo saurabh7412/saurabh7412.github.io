@@ -42,7 +42,7 @@ export const projectArr = [
     tech_stack : "ReactJS | TypeScript | HTML | CSS | JavaScript | Chakra UI Library",
     github_link : `https://github.com/saurabh7412/cluttered-stranger-7385`,
     presentation_link : `https://drive.google.com/file/d/1Mx99ZGOl0nFjZTogzeNnk0Xc6uKfFG0T/view`,
-    deploy_link : `https://attire-guru.netlify.app/`,
+    deploy_link : `https://attire-guru.vercel.app/`,
   },
 
     {
