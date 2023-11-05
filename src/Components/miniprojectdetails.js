@@ -16,7 +16,7 @@ export const projectArr = [
     {
         
       id : 2,
-      image : "https://github-production-user-asset-6210df.s3.amazonaws.com/121215502/280513688-8254a78b-8ff7-4077-9aa6-23c8a4810215.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231105T081056Z&X-Amz-Expires=300&X-Amz-Signature=ef0052b024664bcacf65c9762999d4062cd66b9fe15dc23315e5589194e2384b&X-Amz-SignedHeaders=host&actor_id=121215502&key_id=0&repo_id=585454239",
+      image : "https://github-production-user-asset-6210df.s3.amazonaws.com/121215502/280515545-313697dc-52e4-4330-b191-6471890859f5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231105T084544Z&X-Amz-Expires=300&X-Amz-Signature=45db8ed42f9dd6bd27b196ccab5c1534716cc2699cc1979938153dd4790330f0&X-Amz-SignedHeaders=host&actor_id=121215502&key_id=0&repo_id=585454239",
       title : "Todo-List-App",
       desc : `It's my first basic Angular Project learned through prompt engineering and generative AI within a span of 2 days.`,
       project_type : "Solo Project",
