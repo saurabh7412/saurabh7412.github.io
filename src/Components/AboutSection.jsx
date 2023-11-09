@@ -23,7 +23,7 @@ const AboutSection = () => {
           <List spacing={10}>
             <ListItem className="listitem" >
               <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              Hello My name is <span>SAURABH BHATT</span> and I enjoy creating
+              Hello This is <span>SAURABH BHATT</span> and I enjoy creating
               things that live on the internet.
             </ListItem>
             <ListItem className="listitem">
@@ -40,10 +40,10 @@ const AboutSection = () => {
             </ListItem>
             <ListItem className="listitem">
               <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              I built 4 major projects and 6+ mini projects. Learned a great
+              Built 4 major projects and 6+ mini projects. Learned a great
               deal about teamwork, leadership, and communication. After months
-              of rigorous training, here I am looking for an opportunity as a
-              full Stack web Developer.HTML, CSS, JavaScript
+              of rigorous training, here looking for an opportunity as a
+              full Stack web Developer. Proficient in React, HTML, CSS, JavaScript.
             </ListItem>
           </List>
         </div>
