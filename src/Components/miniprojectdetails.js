@@ -1,6 +1,8 @@
+import angularlogo from "../images/angular-todo.png"
+
 export const projectArr = [
     {
-        
+
       id : 1,
       image : "https://user-images.githubusercontent.com/121215502/280262936-78a0db5d-238a-4e16-9cc7-fc5300188ca0.png",
       title : "Pro-Collab",
@@ -11,12 +13,12 @@ export const projectArr = [
       github_link : `https://github.com/saurabh7412/Pro-Collab`,
       presentation_link : `https://youtu.be/zAhkznKMYAY`,
       deploy_link : "https://pro-collab-zeta.vercel.app/login"
-  
+
     },
     {
-        
+
       id : 2,
-      image : "https://github-production-user-asset-6210df.s3.amazonaws.com/121215502/280515545-313697dc-52e4-4330-b191-6471890859f5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231105T085632Z&X-Amz-Expires=300&X-Amz-Signature=6e6b2992bd6c3d9aa68d1327713e23d0448724fb348454fb3d124d674b11f4a6&X-Amz-SignedHeaders=host&actor_id=121215502&key_id=0&repo_id=585454239",
+      image : `${angularlogo}`,
       title : "Todo-List-App",
       desc : `It's my first basic Angular Project learned through prompt engineering and generative AI within a span of 2 days.`,
       project_type : "Solo Project",
@@ -24,8 +26,8 @@ export const projectArr = [
       tech_stack : "Angular | CSS",
       github_link : `https://github.com/saurabh7412/Todo-List-App-Angular`,
       deploy_link : "https://to-do-list-app-eta-lovat.vercel.app/todos"
-  
+
     },
 
-  
+
     ]
