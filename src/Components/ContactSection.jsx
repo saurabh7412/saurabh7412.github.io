@@ -1,37 +1,53 @@
 import React, { useState } from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import email from "../images/email.png";
 import mobile from "../images/mobile.png";
 import emailme from "../images/emailme.svg";
 
-
 const obj = {
-  name : "",
-  email : "",
-  phone : "",
-  message : ""
-}
+  name: "",
+  email: "",
+  phone: "",
+  message: ""
+};
 
 const ContactSection = () => {
-  const [input , setInput] = useState(obj);
+  const [input, setInput] = useState(obj);
 
-  const handleChange =(e)=>{
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput((p) => {
+      return { ...p, [name]: value };
+    });
+  };
 
-    const {name , value} = e.target;
-
-    setInput((p)=>{
-     return {...p,  [name] : value}
-    })
-
+  const handleClear = ()=>{
+    setInput(obj);
   }
 
-
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
-  }
+    fetch('https://formspree.io/f/xbljydvl', {
+       method: 'POST',
+       headers: {
+         'Accept': 'application/json',
+         'Content-Type': 'application/json'
+       },
+       body: JSON.stringify(input)
+     }).then((response) => {
+       if (response.ok) {
+         alert('Message sent successfully!');
+         setInput({ name: '', email: '', phone: '', message: '' });
+       } else {
+         alert('Failed to send message.');
+       }
+     }).catch((error) => {
+       console.error('There was an error:', error);
+     });
+  };
+
 
   return (
     <div id="contact">
@@ -45,7 +61,7 @@ const ContactSection = () => {
 
         <div id="div2">
           <div id="div2-1">
-            <img src={emailme} />
+            <img src={emailme} alt="Contact Illustration" />
           </div>
 
           <div id="div2-2">
@@ -54,9 +70,10 @@ const ContactSection = () => {
                 href="https://www.linkedin.com/in/saurabh7412/"
                 target="_blank"
                 id="contact-linkedin"
+                rel="noopener noreferrer"
               >
                 <button id="btn1" title="LinkedIn Profile">
-                  <img src={linkedin} />
+                  <img src={linkedin} alt="LinkedIn" />
                   Linkedin
                 </button>
               </a>
@@ -65,9 +82,10 @@ const ContactSection = () => {
                 href="https://github.com/saurabh7412"
                 target="_blank"
                 id="contact-github"
+                rel="noopener noreferrer"
               >
                 <button id="btn2" title="Github">
-                  <img src={github} />
+                  <img src={github} alt="GitHub" />
                   Github
                 </button>
               </a>
@@ -76,16 +94,17 @@ const ContactSection = () => {
                 href="mailto:saurabh7412@gmail.com"
                 target="_blank"
                 id="contact-email"
+                rel="noopener noreferrer"
               >
                 <button id="btn3" title="Email">
-                  <img src={email} />
+                  <img src={email} alt="Email" />
                   Email
                 </button>
               </a>
 
               <a id="contact-phone">
                 <button id="btn4" title="Mobile">
-                  <img src={mobile} />
+                  <img src={mobile} alt="Mobile" />
                   Mob
                 </button>
               </a>
@@ -96,27 +115,49 @@ const ContactSection = () => {
                 Get In <span>Touch</span>
               </label>
               <div>
-                <input type="text" name="name" placeholder="Full Name" onChange={handleChange} />
-              </div>
-
-              <div>
-                <input type="email" name="email" placeholder="Email" onChange={handleChange} />
-              </div>
-
-              <div>
-                <input type="number" name="phone" placeholder="Phone" onChange={handleChange} />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  onChange={handleChange}
+                  value={input?.name}
+                />
               </div>
               <div>
-                <textarea placeholder="Your Message" name="message" onChange={handleChange} />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  onChange={handleChange}
+                  value={input?.email}
+                />
               </div>
-
               <div>
-                <button id="submit">Submit</button>
-                <button id="clear">Clear</button>
+                <input
+                  type="number"
+                  name="phone"
+                  placeholder="Phone"
+                  onChange={handleChange}
+                  value={input?.phone}
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  name="message"
+                  onChange={handleChange}
+                  value={input?.message}
+                />
+              </div>
+              <div>
+                <button type="submit" id="submit">
+                  Submit
+                </button>
+                <button type="button" id="clear" onClick={handleClear}>
+                  Clear
+                </button>
               </div>
             </form>
-
-
           </div>
         </div>
 
@@ -130,18 +171,17 @@ const ContactSection = () => {
 
 export default ContactSection;
 
-
-
-
-
 const DIV = styled.div`
   width: 80%;
+  max-width: 1200px; /* Restrict max width to avoid overflow */
+  margin: auto;
+  overflow: hidden; /* Ensure no overflow beyond container */
 
   #contactheading {
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 290px;
     font-size: 20px;
+    text-align: center;
   }
 
   #sp1 {
@@ -153,57 +193,83 @@ const DIV = styled.div`
   }
 
   #div2 {
-    width: 122%;
     display: flex;
-    margin: auto;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: auto;
   }
 
-  #div2-1 {
-    width: 50%;
+  #div2-1,
+  #div2-2 {
+    flex: 1 1 45%; /* Flexibility in layout */
+    min-width: 300px; /* Minimum width for individual sections */
+    padding: 10px; /* Add padding for inner spacing */
+    box-sizing: border-box; /* Include padding in total width */
   }
 
   #div2-1 img {
-    width: 90%;
-  }
-
-  #div2-2 {
-    width: 50%;
+    width: 100%;
+    height: auto;
   }
 
   #btndiv {
-    width: 85%;
     display: flex;
-    padding-bottom: 40px;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
   }
 
   #btndiv a {
     text-decoration: none;
-  }
-
-  #btndiv img {
-    width: 25%;
-  }
-
-  #btn1 img {
-    width: 20%;
+    flex: 1 1 45%;
+    margin: 10px;
   }
 
   #btn1,
   #btn2,
   #btn3,
   #btn4 {
-    font-size: 22px;
-    padding: 5px 45px 5px 45px;
-    color: white;
-    border: none;
-    border-radius: 5px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 48%;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  #btn1 img,
+  #btn2 img,
+  #btn3 img,
+  #btn4 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  #btn1 {
+    background-color: #0a66c2;
+    color: white;
+  }
+
+  #btn2 {
+    background-color: #424242;
+    color: white;
+  }
+
+  #btn3 {
+    background-color: #f44336;
+    color: white;
+  }
+
+  #btn4 {
+    background-color: #04aa6d;
+    color: white;
   }
 
   #btn1:hover,
@@ -212,26 +278,14 @@ const DIV = styled.div`
   #btn4:hover {
     background-color: white;
     color: black;
-    scale: 1.1;
-    transition: 500ms;
+    transform: scale(1.05);
+    transition: 300ms;
   }
 
-  #btn1 {
-    background-color: #0a66c2;
-  }
+  /* Keeping form styles as provided originally */
 
-  #btn2 {
-    background-color: #424242;
-    margin-left: 2%;
-  }
-
-  #btn3 {
-    background-color: #f44336;
-  }
-
-  #btn4 {
-    background-color: #04aa6d;
-    margin-left: 2%;
+  #formdiv {
+    padding-top: 50px;
   }
 
   #formdiv span {
@@ -240,7 +294,6 @@ const DIV = styled.div`
 
   #formdiv label {
     color: white;
-    margin-left: -510px;
     font-size: 22px;
   }
 
@@ -265,7 +318,7 @@ const DIV = styled.div`
   #submit,
   #clear {
     width: 48%;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -279,263 +332,23 @@ const DIV = styled.div`
 
   #clear {
     background-color: rgb(15, 22, 36);
-    margin-left: 2%;
   }
 
-  /* Add styles for medium screens */
-  @media only screen and (max-width: 768px) and (min-width: 500px) {
-    #div2 {
-      flex-direction: column;
-    }
-
-    #div2-1 {
-      width: 100%;
-    }
-
-    #div2-2 {
-      width: 100%;
-      margin-top: 20px;
-    }
-
+  /* Responsive Design for buttons */
+  @media only screen and (max-width: 768px) {
     #btndiv {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    #btndiv a {
-      margin: 5px;
-    }
-  }
-
-  /* Add styles for small screens */
-  @media only screen and (max-width: 500px) {
-    #contactheading {
-      font-size: 18px;
+      flex-direction: column;
+      align-items: stretch;
     }
 
     #div2 {
       flex-direction: column;
     }
 
-    #div2-1 {
-      width: 100%;
-    }
-
+    #div2-1,
     #div2-2 {
       width: 100%;
-      margin-top: 20px;
-    }
-
-    #btndiv {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    #btndiv a {
-      margin: 5px;
-    }
-
-    #formdiv label {
-      font-size: 18px;
-    }
-
-    #formdiv input,
-    textarea {
-      font-size: 18px;
-    }
-
-    #submit,
-    #clear {
-      font-size: 18px;
     }
   }
 `;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const DIV = styled.div`
-//   width: 80%;
-//   #contactheading {
-//     padding-top: 40px;
-//     padding-bottom: 40px;
-//     margin-left: 290px;
-//     font-size: 20px;
-//   }
-
-//   #sp1 {
-//     color: #04aa6d;
-//   }
-
-//   #sp2 {
-//     color: white;
-//   }
-
-//   #div2 {
-//     ${"" /* border: 2px solid red; */}
-//     width: 122%;
-//     display: flex;
-//     margin: auto;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-//   #div2-1 {
-//     width: 50%;
-//     ${"" /* border: 1px solid blue; */}
-//   }
-//   #div2-1 img {
-//     width: 100%;
-//   }
-//   #div2-2 {
-//     width: 50%;
-//     ${"" /* border: 1px solid green;  */}
-//     ${"" /* height : 300px; */}
-//   }
-
-//   #btndiv {
-//     ${"" /* border: 1px solid red;  */}
-//     width: 85%;
-//     display: flex;
-//     padding-bottom: 40px;
-//     margin: auto;
-//   }
-//   #btndiv a {
-//     text-decoration: none;
-//   }
-//   #btndiv img {
-//     width: 25%;
-//   }
-//   #btn1 img {
-//     width: 20%;
-//   }
-
-//   #btn1 {
-//     font-size: 22px;
-//     padding: 5px 5px 5px 5px;
-//     background-color: #0a66c2;
-//     color: white;
-//     border: none;
-//     border-radius: 5px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-//   #btn1:hover {
-//     background-color: white;
-//     color: black;
-//     scale: 1.1;
-//     transition: 500ms;
-//   }
-//   #btn2 {
-//     font-size: 22px;
-//     padding: 5px 5px 5px 5px;
-//     background-color: #424242;
-//     color: white;
-//     border: none;
-//     border-radius: 5px;
-//     margin-left: 30px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-//   #btn2:hover {
-//     background-color: white;
-//     color: black;
-//     scale: 1.1;
-//     transition: 500ms;
-//   }
-//   #btn3 {
-//     font-size: 22px;
-//     padding: 5px 5px 5px 5px;
-//     background-color: #f44336;
-//     color: white;
-//     border: none;
-//     border-radius: 5px;
-//     margin-left: 30px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-//   #btn3:hover {
-//     background-color: white;
-//     color: black;
-//     scale: 1.1;
-//     transition: 500ms;
-//   }
-//   #btn4 {
-//     font-size: 22px;
-//     padding: 5px 5px 5px 5px;
-//     background-color: #04aa6d;
-//     color: white;
-//     border: none;
-//     border-radius: 5px;
-//     margin-left: 30px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-//   #btn4:hover {
-//     background-color: white;
-//     color: black;
-//     scale: 1.1;
-//     transition: 500ms;
-//   }
-
-//   #formdiv span {
-//     color: #04aa6d;
-//   }
-//   #formdiv label {
-//     color: white;
-//     margin-left: -510px;
-//     font-size: 22px;
-//   }
-//   #formdiv input,
-//   textarea {
-//     width: 80%;
-//     height: 30px;
-//     margin-bottom: 20px;
-//     margin-top: 10px;
-//     padding: 10px 20px;
-//     font-size: 20px;
-//     color: white;
-//     border-radius: 10px;
-//     box-shadow: rgba(150, 150, 150, 0.45) 0px 5px 5px;
-//     background-color: rgb(15, 22, 36);
-//   }
-//   textarea {
-//     height: 80px;
-//   }
-//   #submit {
-//     width: 50%;
-//     margin: 20px 20px 20px 20px;
-//     padding: 10px 20px;
-//     border-radius: 10px;
-//     border: none;
-//     font-size: 20px;
-//     background-color: #04aa6d;
-//     color: white;
-//   }
-//   #clear {
-//     width: 30%;
-//     margin: 20px 20px 20px 20px;
-//     padding: 10px 20px;
-//     border-radius: 10px;
-//     border: none;
-//     font-size: 20px;
-//     background-color: rgb(15, 22, 36);
-//     color: white;
-//   }
-// `;

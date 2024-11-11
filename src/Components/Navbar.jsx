@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../images/logo.png";
-import { styled } from "styled-components";
+import styled from "styled-components";
 import resume from "../images/Saurabh-Bhatt-Resume.pdf";
 import * as Scroll from "react-scroll";
 import {
@@ -17,23 +17,51 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 
 export const Navbar = () => {
   return (
-    <div id="nav-menu">
+    <NAV_MENU id="nav-menu">
       <WRAPPER>
         <div className="navname">
-          {/* <img src={logo} /> */}
-          <text>
+          <Text>
             <span>SAURABH</span> BHATT
-          </text>
+          </Text>
         </div>
 
-
+        <div className="links">
+          <Link className="nav-link home" to="home" smooth={true}>
+            HOME
+          </Link>
+          <Link className="nav-link about" to="about" smooth={true}>
+            ABOUT
+          </Link>
+          <Link className="nav-link projects" to="projects" smooth={true}>
+            PROJECT
+          </Link>
+          <Link to="github1" smooth={true}>
+            GITHUB
+          </Link>
+          <Link className="nav-link skills" to="skills" smooth={true}>
+            SKILLS
+          </Link>
+          <Link className="nav-link contact" to="contact" smooth={true}>
+            CONTACT
+          </Link>
+          <button id="resume-button-1">
+            <a
+              href={resume}
+              download
+              className="nav-link resume"
+              id="resume-link-1"
+            >
+              RESUME
+            </a>
+          </button>
+        </div>
 
         <div className="links-2">
-          <div class="dropdown">
-            <button class="dropbtn">
+          <div className="dropdown">
+            <button className="dropbtn">
               <HamburgerIcon />
             </button>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <Link to="home" smooth={true}>
                 HOME
               </Link>
@@ -65,200 +93,130 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-
-        <div className="links">
-          <Link class="nav-link home" to="home" smooth={true}>
-            HOME
-          </Link>
-          {/* <a class="nav-link home" >HOME</a> */}
-
-          <Link class="nav-link about" to="about" smooth={true}>
-            ABOUT
-          </Link>
-          <Link class="nav-link projects" to="projects" smooth={true}>
-            PROJECT
-          </Link>
-          <Link to="github1" smooth={true}>
-            GITHUB
-          </Link>
-          <Link class="nav-link skills" to="skills" smooth={true}>
-            SKILLS
-          </Link>
-          <Link class="nav-link contact" to="contact" smooth={true}>
-            CONTACT
-          </Link>
-
-          <button id="resume-button-1">
-            <a
-              href={resume}
-              download
-              className="nav-link resume"
-              id="resume-link-1"
-            >
-              RESUME
-            </a>
-          </button>
-        </div>
-
-        
       </WRAPPER>
-    </div>
+    </NAV_MENU>
   );
 };
 
+const NAV_MENU = styled.div`
+  width: 100%;
+`;
+
 const WRAPPER = styled.div`
   height: 60px;
-  box-size: border-box;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  margin: auto;
   align-items: center;
   background-color: #212121;
   color: white;
   position: fixed;
-  z-index : 1;
-  top: 0px;
-  text {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 1;
+  padding: 0 1rem;
+
+  .navname {
     font-size: 23px;
-    margin-left: 30px;
   }
 
   span {
     color: #04aa6d;
   }
 
-  #resume-button-1 {
-    background-color: #04aa6d;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 21px;
-    padding: 5px 20px;
-
-    border: 1px solid #04aa6d;
-    box-shadow: rgba(150, 150, 150, 0.45) 0px 5px 10px;
-    border-radius: 10px;
-  }
-
-  #resume-button-1:hover {
-    cursor: pointer;
-    scale: 1.1;
-    transition: 600ms;
-    color: #04aa6d;
-    background-color: #212121;
-  }
-
-  @media only screen and (max-width: 500px) {
-    width : 100%;
-
-    .links {
-      visibility: hidden;
-    }
-    .links-2 {
-      visibility: visible;
-    }
-    img {
-      width: 100%;
-    }
-    .dropdown {
-      margin-right: 30px;
-    }
-    .dropdown-content a:hover {
-      background-color: red;
-    }
-  }
-
-  @media only screen and (min-width: 500px) and (max-width: 1900px) {
-    width: 100%;
-    .links {
-      visibility: visible;
-    }
-    .links-2 {
-      visibility: hidden;
-    }
-  }
-
-  img {
-    width: 70%;
-    ${"" /* border : 1px solid; */}
-  }
-
   .links {
-    margin-left: 80px;
-    padding-right : 50px;
-    width: 70%;
     display: flex;
     justify-content: space-between;
-    ${"" /* padding: 30px; */}
-    font-size: 20px;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 70%;
   }
+
   .links a {
     color: white;
     text-decoration: none;
+    margin: 0 10px;
+    white-space: nowrap;
   }
 
   .links a:hover {
     cursor: pointer;
     color: #04aa6d;
-    scale: 1.2;
     transition: 500ms;
   }
 
+  #resume-button-1 {
+    background-color: #04aa6d;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 600ms;
+  }
+
+  #resume-button-1:hover {
+    color: #04aa6d;
+    background-color: #212121;
+  }
+
   .links-2 {
-    margin-right: 20px;
+    display: none;
   }
 
   .dropbtn {
     background-color: #04aa6d;
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    margin-left : 220px;
+    cursor: pointer;
   }
 
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 45px;
   }
 
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    min-width: 160px;
     border-radius: 5px;
-    margin-left: 110px;
+    right: 0;
   }
 
-  /* Links inside the dropdown */
-  .dropdown-content a {
+  .dropdown-content a,
+  .dropdown-content button {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
   }
 
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #04aa6d;
-    border-radius: 5px;
-    scale: 1.1;
-    transition: 500ms;
   }
 
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+  @media only screen and (max-width: 768px) {
+    .links {
+      display: none;
+    }
+
+    .links-2 {
+      display: block;
+    }
   }
 `;

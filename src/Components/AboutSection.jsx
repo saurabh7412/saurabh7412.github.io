@@ -7,49 +7,80 @@ import { CheckCircleIcon as MdCheckCircle } from "@chakra-ui/icons";
 
 const AboutSection = () => {
   return (
-    <div  id="about" class="about section">
+    <div id="about" class="about section">
+      <DIV>
+        <h1>
+          <span id="about1">About</span> <span id="about2">Me</span>
+        </h1>
 
-    <DIV>
-      <h1>
-        <span id="about1">About</span> <span id="about2">Me</span>
-      </h1>
+        <div id="about3">
+          <div id="about3-1">
+            <img src={gif2} />
+          </div>
 
-      <div id="about3">
-        <div id="about3-1">
-          <img src={gif2} />
+          <div className="about3-2" id="user-detail-intro">
+            <List spacing={10}>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                Hello! This is <span>SAURABH BHATT</span>, a Full-Stack
+                Developer passionate about creating impactful web applications.
+              </ListItem>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                1+ year experience with Ruby on Rails, React, and PostgreSQL
+                integration, alongside expertise in the MERN stack.
+              </ListItem>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                Proficient in AI bot development, including function calling,
+                prompt engineering, intent extraction, and model training using
+                Google Gemini. Knowledgable about CrewAI Agentic framework.
+              </ListItem>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                Experienced in creating custom scripts with Google Scripts to
+                automate workflows and enhance functionality.
+              </ListItem>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                Supervised junior developers and interns, promoting teamwork and
+                growth, and acted as a liaison between Product and Development
+                Leads.
+              </ListItem>
+              <ListItem className="listitem">
+                <ListIcon
+                  as={MdCheckCircle}
+                  color="#04aa6d"
+                  style={{ marginRight: "10px" }}
+                />
+                Built 4 major projects and 6+ mini projects, strengthening
+                skills in React, HTML, CSS, JavaScript, and Data Structures and
+                Algorithms.
+              </ListItem>
+            </List>
+          </div>
         </div>
-
-        <div className="about3-2" id="user-detail-intro">
-          <List spacing={10}>
-            <ListItem className="listitem" >
-              <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              Hello This is <span>SAURABH BHATT</span> and I enjoy creating
-              things that live on the internet.
-            </ListItem>
-            <ListItem className="listitem">
-              <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              Quick learner and an aspiring full-stack web developer with core
-              knowledge of MERN stack technology.
-            </ListItem>
-            <ListItem className="listitem">
-              <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              Full Stack Developer with hands on experience in building React
-              Apps. Works efficiently both in frontend as well as backend and is
-              proficient in Data Structure and Algorithms with good problem
-              solving skills.
-            </ListItem>
-            <ListItem className="listitem">
-              <ListIcon as={MdCheckCircle} color="#04aa6d" style={{marginRight:"10px"}}/>
-              Built 4 major projects and 6+ mini projects. Learned a great
-              deal about teamwork, leadership, and communication. After months
-              of rigorous training, here looking for an opportunity as a
-              full Stack web Developer. Proficient in React, HTML, CSS, JavaScript.
-            </ListItem>
-          </List>
-        </div>
-
-      </div>
-    </DIV>
+      </DIV>
     </div>
   );
 };
@@ -88,10 +119,6 @@ const DIV = styled.div`
   .listitem {
     margin-bottom: 20px;
   }
-
-
-
-
 
   @media only screen and (max-width: 768px) and (min-width: 500px) {
     #about3 {

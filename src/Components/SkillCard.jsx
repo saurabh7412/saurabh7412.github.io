@@ -28,12 +28,12 @@ box-shadow: rgba(150, 150, 150, 0.45) 0px 5px 15px;
 color : white;
 }
 img{
-    width: 100%;
+    width: 70%;
 }
 #x:hover {
-    scale : 1.2;
+    scale : 1.1;
     transition : 500ms;
-    
+
 }
 
 `;
