@@ -12,7 +12,7 @@ import resume from "../images/Saurabh-Bhatt-Resume.pdf";
 const HomeSection = () => {
   const handleResumeDownload = () => {
     window.open(
-      `https://drive.google.com/file/d/19RW0qYZv-9deVv_dgljMndNBcLL6z6BD/view?usp=sharing`,
+      `https://drive.google.com/file/d/1Ql90y1VK6poVCrwVZvBJ5UXgN2ndgawq/view?usp=sharing`,
       "_blank",
       "noopener,noreferrer"
     );
