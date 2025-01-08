@@ -2,7 +2,7 @@ import React from "react";
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../images/logo.png";
 import styled from "styled-components";
-import resume from "../images/Saurabh-Bhatt-Resume.pdf";
+import resume from "../images/saurabh-bhatt-resume.pdf";
 import * as Scroll from "react-scroll";
 import {
   Link,

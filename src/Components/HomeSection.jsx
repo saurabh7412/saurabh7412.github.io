@@ -7,12 +7,12 @@ import email from "../images/email.png";
 import mobile from "../images/mobile.png";
 import styled from "styled-components";
 import { ViewIcon } from "@chakra-ui/icons";
-import resume from "../images/Saurabh-Bhatt-Resume.pdf";
+import resume from "../images/saurabh-bhatt-resume.pdf";
 
 const HomeSection = () => {
   const handleResumeDownload = () => {
     window.open(
-      `https://drive.google.com/file/d/1Ql90y1VK6poVCrwVZvBJ5UXgN2ndgawq/view?usp=sharing`,
+      `https://drive.google.com/file/d/1m6WcnDboh_uTNMeS8-bM564J3cfy75bx/view?usp=sharing`,
       "_blank",
       "noopener,noreferrer"
     );

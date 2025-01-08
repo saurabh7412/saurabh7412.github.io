@@ -1,6 +1,6 @@
 export const projectArr = [
   {
-      
+
     id : 1,
     image : "https://user-images.githubusercontent.com/121215502/255427784-4d57f2a9-dc62-4d44-b30f-5895e3f68f24.png",
     title : "BRIKS99.COM",
@@ -19,16 +19,16 @@ export const projectArr = [
   {
       
     id : 2,
-    image : "https://user-images.githubusercontent.com/121215502/276920272-96e17545-0028-4880-8d32-300ea11893ab.png",
+    image : "https://github.com/user-attachments/assets/9dfc3fe2-620b-42d0-8e1b-7190106527a4",
     title : "Advanced-Code-Converter",
-    desc : `Experience seamless code conversion and GitHub integration with my advanced tool, leveraging OpenAI. Easily convert and push code to your GitHub repository, streamlining your development process and enhancing collaboration. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion process. We are proud to share that this project was successfully completed in just 2 days by a solo developer. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding. Elevate your coding experience with us!`,
+    desc : `Experience seamless code conversion and content generation with my advanced tool, leveraging Gemini-1.5-flash. This React-based application offers a user-friendly interface for developers and content creators to efficiently transform code between different programming languages. You can debug and do quality checking of the code and generate various types of content. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion and content generation process. We are proud to share that this project was successfully completed in just 2 days by me. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding and content creation. Elevate your coding and content generation experience with us!`,
     project_type : "Solo Project",
     duration : 2,
-    tech_stack : "ReactJS | Open AI | JavaScript | Daisy UI Library | Node | Express",
+    tech_stack : "ReactJS | Gemini-1.5-flash | JavaScript | Daisy UI Library | Node | Express",
     github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
     deploy_link : "https://advanced-code-converter.vercel.app/"
 
-  },
+  },,
   {
     id : 3,
     image : "https://user-images.githubusercontent.com/121215502/246683711-2d630738-872d-4d61-a5a4-7f37ee31c839.png",
