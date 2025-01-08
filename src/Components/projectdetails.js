@@ -17,16 +17,16 @@ export const projectArr = [
 
   },
   {
-      
+
     id : 2,
     image : "https://github.com/user-attachments/assets/9dfc3fe2-620b-42d0-8e1b-7190106527a4",
-    title : "Advanced-Code-Converter",
+    title : "Advanced-Code-Converter-And-Content-Generator",
     desc : `Experience seamless code conversion and content generation with my advanced tool, leveraging Gemini-1.5-flash. This React-based application offers a user-friendly interface for developers and content creators to efficiently transform code between different programming languages. You can debug and do quality checking of the code and generate various types of content. Boost productivity today! My innovative solution, powered by Generative AI, simplifies the code conversion and content generation process. We are proud to share that this project was successfully completed in just 2 days by me. It features the use of styled components and the Daisy UI library for efficient design. Join us in optimizing your development workflow and explore the possibilities of AI-driven coding and content creation. Elevate your coding and content generation experience with us!`,
     project_type : "Solo Project",
     duration : 2,
     tech_stack : "ReactJS | Gemini-1.5-flash | JavaScript | Daisy UI Library | Node | Express",
-    github_link : `https://github.com/saurabh7412/Advance-Code-Converter`,
-    deploy_link : "https://advanced-code-converter.vercel.app/"
+    github_link : `https://github.com/saurabh7412/Advance-Code-Converter-and-Content-Generator`,
+    deploy_link : "https://advance-code-converter-and-content-generator.vercel.app/"
 
   },,
   {
