@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.00c66f7d.css",
-    "main.js": "/static/js/main.a5591323.js",
+    "main.js": "/static/js/main.81758d7f.js",
     "static/js/787.a137a0a0.chunk.js": "/static/js/787.a137a0a0.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.97f2b188b8af96fb1758.gif",
     "static/media/gemini-ai.png": "/static/media/gemini-ai.8668928fe9307817edfd.png",
-    "static/media/Saurabh-Bhatt-Resume.pdf": "/static/media/Saurabh-Bhatt-Resume.0b36c9a8e01c7033c75d.pdf",
     "static/media/crewai.png": "/static/media/crewai.c0c9df5bd4e934518c30.png",
+    "static/media/saurabh-bhatt-resume.pdf": "/static/media/saurabh-bhatt-resume.a1429ca9d0c14a543e06.pdf",
     "static/media/angular-todo.png": "/static/media/angular-todo.ff3ff401aabf8fd77c2b.png",
     "static/media/emailme.svg": "/static/media/emailme.90e8c0993f0554b8623463cdf471d267.svg",
     "static/media/Claude Ai.png": "/static/media/Claude Ai.4d0bf12ec3ded74b6b07.png",
@@ -34,11 +34,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.00c66f7d.css.map": "/static/css/main.00c66f7d.css.map",
-    "main.a5591323.js.map": "/static/js/main.a5591323.js.map",
+    "main.81758d7f.js.map": "/static/js/main.81758d7f.js.map",
     "787.a137a0a0.chunk.js.map": "/static/js/787.a137a0a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00c66f7d.css",
-    "static/js/main.a5591323.js"
+    "static/js/main.81758d7f.js"
   ]
 }
